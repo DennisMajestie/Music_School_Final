@@ -1,0 +1,89 @@
+.margin {
+  margin-bottom: 0;
+}
+
+.centered {
+  display: flex;
+  justify-content: center !important;
+}
+
+.card-style {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.card-extra {
+  text-align: center;
+  flex: 1;
+}
+
+.margin-top {
+  margin-top: 80px;
+}
+
+// @media (max-width: 480px) {
+//     .card-style {
+//         border-radius: 15px 90px;
+//        margin-right:4rem ;
+//         display: inline-block;
+
+//     }
+
+@media (max-width: 600px) {
+  .card-style {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-extra {
+    width: 100%; /* Cards take full width on small screens */
+  }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-right: -70px;
+  margin-top: -290px;
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, -20px);
+  }
+  50% {
+    transform: translate(0, 300px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.floating2 {
+  animation-name: floating;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  margin-right: 70px;
+  margin-top: 20px;
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 200px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.card-margin {
+  margin-bottom: 200px;
+  margin-left: -80px;
+}
